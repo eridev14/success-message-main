@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <template id="container">
+    <div class="container">
+      <section class="container__left left">
+        <h1 class="left__title">Stay updated</h1>
+        <p class="left__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Alias
+        </p>
+        <ul class="left__list">
+          <li class="left__item">Lorem ipsum dolor sit ametdolor sit amet</li>
+          <li class="left__item">Lorem ipsum dolor sit amet dolor sit amet</li>
+          <li class="left__item">Lorem ipsum dolor sit amet dolor sit amet</li>
+        </ul>
+        <form class="form left__form" novalidate>
+          <div class="form__div">
+            <div class="form__message">
+              <label for="email" class="form__label">Email adress</label>
+              <span class="form__invalid"></span>
+            </div>
+            <input type="email" name="email" id="email" placeholder="email@company.com" class="form__email"
+              title="Please provide only a Best Startup Ever corporate email address">
+          </div>
+          <button class="form__btn btn">Subcribe to monthly newslatter</button>
+        </form>
+      </section>
+      <section class="container__right">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="fond">
+      </section>
+    </div>
+  </template>
+
+  <template id="thanks">
+    <div class="container container--thanks thanks">
+      <div class="thanks__logo">
+        <img src="./assets/images/icon-success.svg" alt="succes">
+      </div>
+      <h2 class="thanks__title">Thanks for subscribing</h2>
+      <p class="thanks__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident <span class="thanks__email"></span>
+        rerum voluptatibus atque
+        possimus inventore corporis, adipisci voluptatum temporibus
+      </p>
+      <button class="thanks__btn btn">Dismiss message</button>
+    </div>
+  </template>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
